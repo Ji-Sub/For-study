@@ -1,1 +1,42 @@
 /* Add styles here */
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+body.dark {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+#toggle-btn {
+  margin-top: 16px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light #toggle-btn {
+  background-color: #111111;
+  color: #ffffff;
+}
+
+body.dark #toggle-btn {
+  background-color: #f0f0f0;
+  color: #111111;
+}
